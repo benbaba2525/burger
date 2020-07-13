@@ -1,6 +1,7 @@
 
 
-
+<div class="container-fluid">
+  
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -8,25 +9,31 @@
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
+ 
     <div class="carousel-item active">
+           <h1 class="head">Eat Da Burger !!</h1>
       <img src="/assets/img/img4.jpeg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-      
 
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
+
     <div class="carousel-item">
+      <h1 class="head">Eat Da Burger !!</h1>
       <img src="/assets/img/photo-1571091718767-18b5b1457add.jpeg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
+         <h1 class="head">Eat Da Burger !!</h1>
         <h5>Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
+
     <div class="carousel-item">
+        <h1 class="head">Eat Da Burger !!</h1>
       <img src="/assets/img/img1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-             <h1>Eat Da Burger !!</h1>
+         <h1 class="head">Eat Da Burger !!</h1>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>
     </div>
@@ -44,9 +51,51 @@
   </a>
 </div>
 <br><br>
-<h1 class="hh">Hello Wold</h1>
-<textarea placeholder="Enter a burger you want to eat, and then click the submit button." id="burgername" name="burger_name"
+<!---     --->
+<!-- Order & Devoured -->
+<div class="container-fluid">
+  <div class = "row">
+<div class="burgerDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+</div>
+<!-- -->
+ <div class="form-group col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
+<h2>Add a Cat</h2>
+<form class="create-form">
+    <div class="form-group col-lg-2">
+          <textarea placeholder="Enter a burger you want to eat, and then click the submit button." id="bu" name="name"
             rows="8" cols="40"></textarea>
+          <br>
+          <button type="submit" class="btn btn-lg btn-primary submitButton"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </div>
+</div>
+<!--  -->
+<div class="devouredDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+<!-- -->
+
+</form>
 
 
+<!-- -->
+       </div>
+    </div>
+  </div>
 
+  

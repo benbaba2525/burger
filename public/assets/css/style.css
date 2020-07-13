@@ -1,18 +1,33 @@
 body {
     padding: 30px;
-    background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);    
+    background-image: linear-gradient(to top, #ec527393 0%, #fd0202 100%);   
  
 }
 
-.hh {
-    font-size: 300px;
+.head {
+    font-family: 'Modak', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(240, 220, 220);
 }
 
 .carousel-item {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 .d-block{
     height:600px;
+}
+
+.container{
+   text-align: center;
+}
+
+li{
+    color: black;
+}
+
+.submitButton{
+    text-align: center;
 }
