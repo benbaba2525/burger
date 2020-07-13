@@ -1,7 +1,7 @@
 
 
 <div class="container-fluid">
-  
+
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -66,7 +66,7 @@
 
 </div>
 <!-- -->
- <div class="form-group col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
+<div class="form-group col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
 <h2>Add a Cat</h2>
 <form class="create-form">
     <div class="form-group col-lg-2">
@@ -74,12 +74,14 @@
             rows="8" cols="40"></textarea>
           <br>
           <button type="submit" class="btn btn-lg btn-primary submitButton"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
-        </div>
+    </div>
+  </form> 
 </div>
+
+
 <!--  -->
 <div class="devouredDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
 <h2>Cats that are sleepy!</h2>
-
 <ul>
   {{#each burgers}}
     {{#if devoured}}
@@ -90,12 +92,11 @@
 </div>
 <!-- -->
 
-</form>
-
-
 <!-- -->
-       </div>
+  
     </div>
   </div>
+
+</div>
 
   
