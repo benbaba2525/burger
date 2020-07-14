@@ -1,55 +1,24 @@
 
 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000">
+  <div class="carousel-inner">
+    <div class="carousel-item active " data-interval="4000">
+       <h1 class="head">Eat Da Burger !!</h1>
+        <img src="/assets/img/img4.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="4000">
+       <h1 class="head">Eat Da Burger !!</h1>
+      <img src="/assets/img/photo-1571091718767-18b5b1457add.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="4000">
+       <h1 class="head">Eat Da Burger !!</h1>
+      <img src="/assets/img/img1.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid">
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
- 
-    <div class="carousel-item active">
-           <h1 class="head">Eat Da Burger !!</h1>
-      <img src="/assets/img/img4.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <h1 class="head">Eat Da Burger !!</h1>
-      <img src="/assets/img/photo-1571091718767-18b5b1457add.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-         <h1 class="head">Eat Da Burger !!</h1>
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-        <h1 class="head">Eat Da Burger !!</h1>
-      <img src="/assets/img/img1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-         <h1 class="head">Eat Da Burger !!</h1>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
-</div>
-
-
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 <br><br>
 <!---     --->
 <!-- Order & Devoured -->
@@ -67,21 +36,21 @@
 </div>
 <!-- -->
 <div class="form-group col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
-<h2>Add a Cat</h2>
+<h2>Add Your Favourite Burger!!</h2>
 <form class="create-form">
-    <div class="form-group col-lg-2">
+    <div class="form-group">
           <textarea placeholder="Enter a burger you want to eat, and then click the submit button." id="bu" name="name"
             rows="8" cols="40"></textarea>
           <br>
-          <button type="submit" class="btn btn-lg btn-primary submitButton"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
     </div>
+    
+     <button type="submit" id="submitButton" class=" btn btn-lg btn-primary "><i class="fa fa-plus-circle" aria-hidden="true" style="width:35px; heigth:8px; font-size:35px;"></i></button>
+         
   </form> 
 </div>
-
-
 <!--  -->
 <div class="devouredDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
-<h2>Cats that are sleepy!</h2>
+
 <ul>
   {{#each burgers}}
     {{#if devoured}}

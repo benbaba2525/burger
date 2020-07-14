@@ -1,9 +1,13 @@
 body {
+
     padding: 30px;
     background-image: linear-gradient(to top, #ec527393 0%, #fd0202 100%);   
  
 }
-
+h2 {
+    font-family: 'Patua One', cursive;
+    color: white;
+}
 .head {
     font-family: 'Modak', cursive;
     font-size: 80px;
@@ -17,7 +21,13 @@ body {
 }
 
 .d-block{
-    height:600px;
+    height:500px;
+}
+
+.burgerImg{
+    widows: 150px;
+    height: 150px;
+    margin: 10px;
 }
 
 .container{
@@ -25,9 +35,21 @@ body {
 }
 
 li{
+    font-family: 'Patua One', cursive;
+    font-size:30px;
+    border:30px;
+    padding:5px;
     color: black;
 }
 
-.submitButton{
-    text-align: center;
+.change-devoured{
+    margin: 10px;
 }
+
+
+#submitButton:hover {
+    background-color: rgb(138, 225, 8);
+    color: black;
+   
+}
+
