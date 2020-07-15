@@ -2,6 +2,7 @@
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000">
   <div class="carousel-inner">
+    
     <div class="carousel-item active " data-interval="4000">
       <div class="carousel-caption d-none d-md-block">
         <h1 class="head">Eat Da Burger !!</h1>
@@ -26,23 +27,19 @@
   </div>
 </div>
 
-
 <div class="container-fluid">
 
 <br><br>
-<!---     --->
 <!-- Order & Devoured -->
 <div class="container-fluid">
   <div class = "row">
 <div class="burgerDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
 <ul class="list-group list-group-flush">
-
     {{#each burgers}} </li>
     {{#unless devoured}}
     {{> burgers/burger-block devoured=true}}
     {{/unless}}
-  {{/each}}
-
+    {{/each}}
 </ul>
 </div>
 <!-- -->
@@ -54,15 +51,13 @@
             rows="8" cols="40"></textarea>
           <br>
     </div>
-    
      <button type="submit" id="submitButton" class=" btn btn-lg btn-primary "><i class="fa fa-plus-circle" aria-hidden="true" style="width:35px; heigth:8px; font-size:35px;"></i></button>
-         
   </form> 
 </div>
 <!--  -->
 <div class="devouredDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
 
-<ul>
+<ul class="list-group list-group-flush">
   {{#each burgers}}
     {{#if devoured}}
      	   {{> burgers/devoured-block devoured=false}}
@@ -70,10 +65,6 @@
   {{/each}}
 </ul>
 </div>
-
-
-
-<!-- -->
 
 <!-- -->
   
