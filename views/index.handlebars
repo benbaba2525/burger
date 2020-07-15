@@ -3,19 +3,29 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000">
   <div class="carousel-inner">
     <div class="carousel-item active " data-interval="4000">
-       <h1 class="head">Eat Da Burger !!</h1>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="head">Eat Da Burger !!</h1>
+      </div>
         <img src="/assets/img/img4.jpeg" class="d-block w-100" alt="...">
     </div>
+
     <div class="carousel-item" data-interval="4000">
-       <h1 class="head">Eat Da Burger !!</h1>
+     <div class="carousel-caption d-none d-md-block">
+        <h1 class="head">Eat Da Burger !!</h1>
+    </div>
       <img src="/assets/img/photo-1571091718767-18b5b1457add.jpeg" class="d-block w-100" alt="...">
     </div>
+
+
     <div class="carousel-item" data-interval="4000">
-       <h1 class="head">Eat Da Burger !!</h1>
       <img src="/assets/img/img1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="head">Eat Da Burger !!</h1>
+      </div>
     </div>
   </div>
 </div>
+
 
 <div class="container-fluid">
 
@@ -25,14 +35,15 @@
 <div class="container-fluid">
   <div class = "row">
 <div class="burgerDiv col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
-<ul>
-  {{#each burgers}}
+<ul class="list-group list-group-flush">
+
+    {{#each burgers}} </li>
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+    {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
 
+</ul>
 </div>
 <!-- -->
 <div class="form-group col-xs-12 col-s-2 col-md-4 col-lg-4 col-xl-4 text-center">
@@ -54,11 +65,14 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
+     	   {{> burgers/devoured-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
 </div>
+
+
+
 <!-- -->
 
 <!-- -->
