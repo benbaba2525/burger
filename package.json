@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/benbaba2525/burger#readme",
   "dependencies": {
+    "array-unique": "^0.3.2",
     "express": "^4.17.1",
-    "express-handlebars": "^5.0.0",
+    "express-handlebars": "^5.1.0",
     "i": "^0.3.6",
     "init": "^0.1.2",
     "mysql": "^2.18.1"
