@@ -8,11 +8,10 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 ### Here's how the app works:
 - Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
-- Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
-- Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.
+- Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
+- Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.User can reorder the burger by click on "Reorder" the burger will wil move to the left side of the page.
 
-
-Your app will store every burger in a database, whether devoured or not.
+The app will store every burger in a database, whether devoured or not.
 
 ### Tools/Languages Used:
  - HTML
@@ -22,14 +21,17 @@ Your app will store every burger in a database, whether devoured or not.
  - NodeJS
  - Express
  - Handlebars
- - MYSQL
+ - MySQL
+ - JawsDB Mysql
  - Heroku
  
 
 ### NPM Packages:
 - <a href="https://www.npmjs.com/package/express">Express</a>
-- <a href="https://www.npmjs.com/package/body-parser">Body Parser</a>
-- <a target="_blank" rel="nofollow" href="https://www.npmjs.com/package/path">Path</a>
+- <a href="https://www.npmjs.com/package/handlebars">Handlebars</a>
+- <a href="https://www.npmjs.com/package/mysql">MySQLL</a>
+
+
 
 ### Authors
   - Kanyarut Pornamnuay
@@ -43,5 +45,7 @@ Your app will store every burger in a database, whether devoured or not.
 ### Helpful Link
 
   - <a target="_blank" rel="nofollow" href="https://expressjs.com/">Express.js</a>
-  - <a target="_blank" rel="nofollow" href="https://www.postman.com/">Postman</a>
+  - <a target="_blank" rel="nofollow" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a>
   - <a target="_blank" rel="nofollow" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up">Heroku</a>
+  - <a target="_blank" rel="nofollow" href="https://handlebarsjs.com/">Handlebars.js</a>
+  - <a target="_blank" rel="nofollow" href="https://elements.heroku.com/addons/jawsdb#docs">JawsDB MySQL Documentation</a>
