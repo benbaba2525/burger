@@ -35,10 +35,13 @@ h2 {
 .container{
    text-align: center;
 }
-
+#devouredHead{
+    font-size: 20px;
+    background-color: rgb(245, 145, 22);
+}
 li{
     font-family: 'Patua One', cursive;
-    font-size:20px;
+    font-size:18px;
     border:30px;
     padding:5px;
     color: black;
